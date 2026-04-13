@@ -78,13 +78,13 @@ python main.py
 ## Example Output
 ```text
 Pause Segments:
-[0.50s – 1.20s], [2.10s – 2.80s]
+[0.00s – 0.06s], [0.10s – 0.26s], [2.59s – 2.62s], [4.93s – 5.22s], [11.17s – 11.55s], [11.68s – 11.78s], [13.70s – 14.02s], [15.52s – 16.22s], [19.52s – 19.58s], [19.65s – 19.68s]
 
-Total Pause Duration: 1.40s
+Total Pause Duration: 2.15s
 
 Repetitions:
-Detected pattern: "ba-ba-ball"
-Repetition Count: 2
+Detected pattern: "I-I-I want"
+Repetition Count: 4
 ```
 
 ## Challenges Faced
@@ -100,3 +100,7 @@ Sample `.wav` clips used for testing can be included in the repository for submi
 
 ## Submission Note
 This is a basic implementation for learning and internship-level demonstration.
+
+## Important Clarification
+The repetition label (for example, `"ba-ba-ball"` or `"I-I-I want"`) is a simple assignment-style pattern tag based on detected repeated segments.
+It is not automatic speech-to-text transcription.
