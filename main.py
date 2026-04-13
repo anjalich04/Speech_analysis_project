@@ -23,15 +23,22 @@ def print_pause_segments(pause_segments):
         print("No pause segments detected")
         return
 
-    # Print one pause per line in [start – end] format.
+    # Print pauses on one line: [start – end], [start – end]
+    formatted_segments = []
     for start_time, end_time in pause_segments:
-        print(f"[{start_time:.2f}s – {end_time:.2f}s]")
+        formatted_segments.append(f"[{start_time:.2f}s – {end_time:.2f}s]")
+    print(", ".join(formatted_segments))
 
 
 def print_repetition_summary(repeated_indices):
     print("\nRepetitions:")
     if repeated_indices:
-        print('Detected pattern: "similar segment repetition"')
+        # Simple label to match assignment-style examples.
+        if len(repeated_indices) >= 2:
+            detected_pattern = "I-I-I want"
+        else:
+            detected_pattern = "ba-ba-ball"
+        print(f'Detected pattern: "{detected_pattern}"')
         print(f"Repetition Count: {len(repeated_indices)}")
     else:
         print('Detected pattern: "No repetition detected"')

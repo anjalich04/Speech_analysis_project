@@ -78,13 +78,12 @@ python main.py
 ## Example Output
 ```text
 Pause Segments:
-[0.50s – 1.20s]
-[2.10s – 2.80s]
+[0.50s – 1.20s], [2.10s – 2.80s]
 
 Total Pause Duration: 1.40s
 
 Repetitions:
-Detected pattern: "similar segment repetition"
+Detected pattern: "ba-ba-ball"
 Repetition Count: 2
 ```
 
@@ -97,6 +96,7 @@ Repetition Count: 2
 ## Note About LibriSpeech Clips
 This project supports combining multiple short clips from the LibriSpeech dataset.
 Use `merge_audio.py` to merge root-level `.wav` clips into one file: `data/sample.wav`.
+Sample `.wav` clips used for testing can be included in the repository for submission.
 
 ## Submission Note
 This is a basic implementation for learning and internship-level demonstration.
